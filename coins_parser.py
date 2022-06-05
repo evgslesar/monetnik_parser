@@ -1,11 +1,11 @@
 import pandas as pd
 import sqlite3
 from requests_html import HTMLSession
-from fake_useragent import FakeUserAgent
+from fake_useragent import UserAgent
 
 
 session = HTMLSession()
-ua = FakeUserAgent()
+ua = UserAgent()
 headers = {'User-Agent': ua.random}
 # proxies = {'https': ''}
 
